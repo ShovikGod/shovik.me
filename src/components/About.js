@@ -2,7 +2,7 @@ import React from "react"
 
 import { Container, Title, Button } from "./common"
 
-import profile from "../assets/image/profile.jpg"
+import profile from "../assets/image/profile.png"
 
 import "./about.css"
 
@@ -14,14 +14,13 @@ const About = () => {
         <div className="about">
           <div className="about-details">
             <p>
-              Hello! I'm Shovik Poddar, a passionate software engineer. I develop web applications. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am currently persuing my major in Electronics & Communication Engineering from IEM, Kolkata, India. I am available for any kind of job opportunity that suits my interests.
+              Hello! I'm Shovik Poddar, a passionate <span className="focus">software developer</span>. I mainly develop <span className="focus">web applications</span>. My core skill is based on JavaScript and I love to do most of the things using JavaScript. My first preference has always being <span className="focus">designing websites</span> and <span className="focus">frontend devlopment</span>. I am currently in my 3rd year of undergraduate studies in Electronics & Communication Engineering.
             </p>
             <div className="about-action">
               <Button
-                link="https://github.com/zonayedpca/zonayed.me/raw/master/src/data/file/MyResume.pdf"
-                target="_blank"
+                link="mailto:ws.shovik@gmail.com"
                 bgColor="#f27602"
-                title="Get Resume"
+                title="Hire Me"
               />
             </div>
           </div>

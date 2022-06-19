@@ -1,13 +1,9 @@
 .intro-area {
+  background-image: url('../assets/image/intro-bg.png');
+  z-index: -1;
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
-
-.intro-area .bg {
-  position: absolute;
-  opacity: 0.5;
-  z-index: -1;
 }
 
 .intro {

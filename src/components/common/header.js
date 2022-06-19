@@ -78,6 +78,11 @@ const Header = () => {
               </a>
             </li>
             <li>
+              <a onClick={handleScroll} href="#experience">
+                Experiences
+              </a>
+            </li>
+            <li>
               <a onClick={handleScroll} href="#contact">
                 Contact
               </a>
@@ -87,7 +92,7 @@ const Header = () => {
                 className="btn-download"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/zonayedpca/zonayed.me/raw/master/src/data/file/MyResume.pdf"
+                href="https://github.com/ShovikGod/shovik.me/raw/main/src/data/file/MyResume.pdf"
               >
                 Resume
               </a>

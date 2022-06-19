@@ -1,41 +1,74 @@
-import React, { useState } from "react"
+import React from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
 import { Container } from "./common"
 
-import { portfolios } from "../data"
+import { projects } from "../data"
 
 import "./portfolio.css"
-import PortfolioAction from "./PortfolioAction"
+// import PortfolioAction from "./PortfolioAction"
 
 const Portfolio = () => {
-  const portfoliosName = Object.keys(portfolios)
-  const [selectedPortfolio, setSelectedPortfolio] = useState(portfoliosName[0])
-  const selectedFeaturedPortfolios = portfolios[selectedPortfolio].filter(
-    portfolio => portfolio.type === "featured"
-  )
-  const selectedPortfolios = portfolios[selectedPortfolio].filter(
-    portfolio => portfolio.type === "regular"
-  )
   return (
     <div id="portfolio" className="portfolio-area">
       <Container>
         <div className="title left" style={{ height: "160px" }}>
-          <p>Portfolio</p>
+          <p>Projects</p>
         </div>
         <div className="portfolios">
-          <ul className="portfolio-nav">
-            {portfoliosName.map(name => (
-              <li
-                onClick={() => setSelectedPortfolio(name)}
-                className={name === selectedPortfolio ? "active" : ""}
-                key={name}
-              >
-                {name}
-              </li>
-            ))}
-          </ul>
           <div className="portfolio-items portfolios-featured">
+            {projects.map(({ name, image, description, demo, source, tools }) => (
+              <div key={name} className="portfolio">
+                <div className="portfolio-img">
+                  <img alt={name} src={image} />
+                </div>
+                <div className="details">
+                  <h4>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={demo}
+                    >
+                      {name}
+                    </a>
+                  </h4>
+                  <p>{description}</p>
+                  <div className="links">
+                    <ul>
+                      {source && (
+                        <li>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={source}
+                          >
+                            <FaGithub />
+                          </a>
+                        </li>
+                      )}
+                      {demo && (
+                        <li>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={demo}
+                          >
+                            <FaExternalLinkAlt />
+                          </a>
+                        </li>
+                      )}
+                    </ul>
+                  </div>
+                  <ul className="portfolio-tools">
+                    {tools.map(tool => (
+                      <li key={tool}>{tool}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* <div className="portfolio-items portfolios-featured">
             {selectedFeaturedPortfolios.map((portfolio, index) => (
               <div key={index} className="portfolio">
                 <div className="portfolio-img">
@@ -135,8 +168,8 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
-          </div>
-          <PortfolioAction />
+          </div> */}
+          {/* <PortfolioAction /> */}
         </div>
       </Container>
     </div>

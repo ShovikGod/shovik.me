@@ -1,5 +1,5 @@
 import React from "react"
-import { FaAngleUp, FaStar, FaCodeBranch } from "react-icons/fa"
+import { FaAngleUp } from "react-icons/fa"
 
 import { Container } from "./container"
 import { languages } from "../../data"

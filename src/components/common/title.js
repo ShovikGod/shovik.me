@@ -2,9 +2,7 @@ import React from "react"
 import {
   FaGithub,
   FaFacebookF,
-  FaLinkedinIn,
-  FaMediumM,
-  FaTwitter,
+  FaLinkedinIn
 } from "react-icons/fa"
 
 import "./title.css"

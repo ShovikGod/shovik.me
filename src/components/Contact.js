@@ -35,9 +35,9 @@ const Contact = () => {
               <li>
                 <h5>Socials</h5>
                 <p>
-                  LinkedIn - <a href="https://www.linkedin.com/in/shovik-poddar-65a380191/" target="_blank">@shovik-poddar</a>
+                  LinkedIn - <a href="https://www.linkedin.com/in/shovik-poddar-65a380191/" target="_blank" rel="noreferrer">@shovik-poddar</a>
                 <br/>
-                  Facebook - <a href="https://www.facebook.com/metals.life/" target="_blank">@metals.life</a>
+                  Facebook - <a href="https://www.facebook.com/metals.life/" target="_blank" rel="noreferrer">@metals.life</a>
                 </p>
               </li>
               <li>
