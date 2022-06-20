@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 .contact {
+  font-family: 'Space Mono', monospace;
   display: flex;
   flex-wrap: wrap;
   padding-right: 100px;
@@ -13,10 +16,11 @@
 }
 
 .contact > *:last-of-type {
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 .contact-status p {
+  text-align: justify;
   line-height: 2;
 }
 
@@ -31,17 +35,17 @@
 
 .contact-details p span {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.65);
+  color: #ffffffa6;
 }
 
 .contact-details p a{
-  color: rgba(255, 255, 255, 0.65);
+  color: #ffffffa6;
   text-decoration: none;
   transition: color 0.5s ease;
 }
 
 .contact-details p a:hover{
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {

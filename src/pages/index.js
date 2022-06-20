@@ -2,7 +2,7 @@ import React from "react"
 
 import {
   Intro,
-  LoveToDo,
+  // LoveToDo,
   Portfolio,
   About,
   Skill,

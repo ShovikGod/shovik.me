@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-area">
       <Container>
-        <Title side="right" title="Contact" />
+        <Title side="left" title="Contact" />
         <div className="contact">
           <div className="contact-status">
             <p>
@@ -18,8 +18,6 @@ const Contact = () => {
               <Button
                 title="Contact Me"
                 mt="25px"
-                bgColor="#f27602"
-                color="#fff"
                 link="mailto:ws.shovik@gmail.com"
               />
             </div>
@@ -42,7 +40,7 @@ const Contact = () => {
               </li>
               <li>
                 <h5>Address</h5>
-                <p>397/1, Subhas Nagar, Dum Dum Cantt.,<br/>Kolkata - 700065, West Bengal, India</p>
+                <p>397/1, Subhas Nagar, Dum Dum Cantonment,<br/>Kolkata - 700065, West Bengal, India</p>
               </li>
             </ul>
           </div>

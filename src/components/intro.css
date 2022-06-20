@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 .intro-area {
+  font-family: 'Space Mono', monospace;
   background-image: url('../assets/image/intro-bg.png');
   z-index: -1;
   min-height: 100vh;
@@ -7,6 +10,10 @@
 }
 
 .intro {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
   padding-left: 100px;
   padding-top: 50px;
 }

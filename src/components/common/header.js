@@ -2,10 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useRef, useState } from "react"
 import { FaBars } from "react-icons/fa"
-
 import { Container } from "./container"
-import { Logo } from "./logo"
-
+import favicon from '../../assets/image/favicon.png'
 import "./header.css"
 
 const Header = () => {
@@ -54,7 +52,7 @@ const Header = () => {
           <div className="logo">
             <h1>
               <Link to="/">
-                <Logo />
+                <img className="logo" src={favicon} alt="logo" />
               </Link>
             </h1>
           </div>
@@ -77,11 +75,11 @@ const Header = () => {
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a onClick={handleScroll} href="#experience">
                 Experiences
               </a>
-            </li>
+            </li> */}
             <li>
               <a onClick={handleScroll} href="#contact">
                 Contact

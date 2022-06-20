@@ -44,38 +44,6 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
-        // {
-        //   property: "og:image",
-        //   content: require("../../assets/image/thumbnail.png"),
-        // },
-        // {
-        //   property: "og:image:secure_url",
-        //   content: require("../../assets/image/thumbnail.png"),
-        // },
-        // {
-        //   property: "og:image:width",
-        //   content: "1200",
-        // },
-        // {
-        //   property: "og:image:height",
-        //   content: "675",
-        // },
-        // {
-        //   name: `twitter:card`,
-        //   content: `summary`,
-        // },
-        // {
-        //   name: `twitter:creator`,
-        //   content: site.siteMetadata.author,
-        // },
-        // {
-        //   name: `twitter:title`,
-        //   content: title,
-        // },
-        // {
-        //   name: `twitter:description`,
-        //   content: metaDescription,
-        // },
       ].concat(meta)}
     />
   )

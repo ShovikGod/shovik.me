@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 .portfolio-area {
+  font-family: 'Space Mono', monospace;
   position: relative;
 }
 
@@ -56,6 +59,20 @@
   font-size: 26px;
   font-weight: 900;
   margin-bottom: 15px;
+  transition: color 0.2s ease-in-out;
+}
+
+.portfolio{
+  border: 2px solid #1d293a;
+  transition: border 0.2s ease-in-out;
+}
+
+.portfolio:hover{
+  border: 2px solid #f27602;
+}
+
+.portfolio:hover .details h4{
+  color: #f27602;
 }
 
 .portfolio-items .portfolio-img {
@@ -165,12 +182,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .portfolios-regular {
-    margin-top: 25px;
-  }
-}
-
 @media only screen and (max-width: 481px) {
   .portfolio-nav {
     margin-bottom: 0;
@@ -183,9 +194,5 @@
 
   .portfolio-items > * {
     margin-bottom: 15px;
-  }
-
-  .portfolios-regular {
-    margin-top: 15px;
   }
 }

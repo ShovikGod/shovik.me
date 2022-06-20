@@ -19,7 +19,6 @@ const About = () => {
             <div className="about-action">
               <Button
                 link="mailto:ws.shovik@gmail.com"
-                bgColor="#f27602"
                 title="Hire Me"
               />
             </div>

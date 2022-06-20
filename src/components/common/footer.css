@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 .footer-area {
+  font-family: 'Space Mono', monospace;
   background-color: #1d293a;
 }
 
@@ -69,11 +72,18 @@
 
 .footer .copyright p span {
   display: inline-block;
+  color: #1d293a;
   cursor: pointer;
   margin-left: 15px;
-  background-color: #f27602;
-  padding: 2px 5px;
+  background-color: #fff;
+  padding: 0px 5px;
   border-radius: 4px;
+  border: 2px solid #fff;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer .copyright p span:hover {
+  color: #f27602;
 }
 
 @media only screen and (max-width: 768px) {

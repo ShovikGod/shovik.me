@@ -9,13 +9,11 @@ const Button = ({
   clickEvent,
   onMouseOver,
   onMouseOut,
-  color,
-  bgColor,
-  borderColor,
   mt,
   mb,
   ml,
   mr,
+  type,
 }) => {
   const handleClick = e => {
     e.preventDefault()
@@ -35,16 +33,13 @@ const Button = ({
         marginBottom: mb,
         marginLeft: ml,
         marginRight: mr,
-        color,
-        borderColor,
-        backgroundColor: bgColor,
       }}
       target={target}
       onClick={clickEvent && handleClick}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
       rel={target ? "noopener noreferrer" : ""}
-      className="btn"
+      className= {`btn ${(type=="outlined") ? "btn-outlined" : ""}`}
       href={link}
     >
       {title}
@@ -60,9 +55,7 @@ Button.defaultProps = {
   marginBottom: 0,
   marginLeft: 0,
   marginRight: 0,
-  color: "rgb(255, 255, 255)",
-  bgColor: "transparent",
-  borderColor: "#f27602",
+  type: "solid",
 }
 
 export { Button }

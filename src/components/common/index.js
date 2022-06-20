@@ -1,7 +1,6 @@
 export * from "./seo"
 export * from "./layout"
 export * from "./container"
-export * from "./logo"
 export * from "./header"
 export * from "./title"
 export * from "./button"

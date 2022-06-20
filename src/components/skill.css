@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 .skill-area {
+  font-family: 'Space Mono', monospace;
   min-height: 65vh;
   position: relative;
 }

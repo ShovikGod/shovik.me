@@ -4,7 +4,6 @@ export const skills = {
     { name: "Express JS", percent: 60 },
     { name: "React", percent: 60 },
     { name: "Node JS", percent: 50 },
-    { name: "Gatsby", percent: 40 },
     { name: "MySQL", percent: 30 },
   ],
   Design: [

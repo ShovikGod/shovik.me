@@ -1,11 +1,25 @@
 .btn {
+  color: #fff;
+  font-weight: 700;
+  background-color: #f27602;
   display: inline-block;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #f27602;
   padding: 15px 25px;
   border-radius: 4px;
   text-decoration: none;
   transition: all 0.2s ease;
+}
+
+.btn:hover{
+  background-color: #fa891f;
+}
+
+.btn-outlined{
+  background-color: transparent !important;
+}
+
+.btn-outlined:hover{
+  border-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {

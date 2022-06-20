@@ -23,10 +23,9 @@ const Intro = () => {
               <Button
                 link="https://github.com/ShovikGod/shovik.me/raw/main/src/data/file/MyResume.pdf"
                 target="__blank"
-                bgColor="#f27602"
                 title="Get Resume"
               />
-              <Button clickEvent link="#about" ml="15px" title="About Me" />
+              <Button type="outlined" clickEvent link="#about" ml="15px" title="About Me" />
             </div>
           </div>
         </div>

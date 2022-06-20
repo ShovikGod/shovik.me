@@ -1,7 +1,7 @@
 import React from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
-import { Container } from "./common"
+import { Container, Title } from "./common"
 
 import { projects } from "../data"
 
@@ -12,25 +12,17 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="portfolio-area">
       <Container>
-        <div className="title left" style={{ height: "160px" }}>
-          <p>Projects</p>
-        </div>
+      <Title side="right" title="Projects" />
         <div className="portfolios">
-          <div className="portfolio-items portfolios-featured">
+          <div className="portfolio-items">
             {projects.map(({ name, image, description, demo, source, tools }) => (
               <div key={name} className="portfolio">
                 <div className="portfolio-img">
-                  <img alt={name} src={image} />
+                  {/* <img alt={name} src={image} /> */}
                 </div>
                 <div className="details">
                   <h4>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={demo}
-                    >
                       {name}
-                    </a>
                   </h4>
                   <p>{description}</p>
                   <div className="links">
