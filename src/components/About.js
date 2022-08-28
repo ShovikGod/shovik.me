@@ -14,7 +14,7 @@ const About = () => {
         <div className="about">
           <div className="about-details">
             <p>
-              Hello! I'm Shovik Poddar, a passionate <span className="focus">software developer</span>. I mainly develop <span className="focus">web applications</span>. My core skill is based on JavaScript and I love to do most of the things using JavaScript. My first preference has always being <span className="focus">designing websites</span> and <span className="focus">frontend devlopment</span>. I am currently in my 3rd year of undergraduate studies in Electronics & Communication Engineering.
+              Hello! I'm Shovik Poddar, a passionate <span className="focus">software developer</span>. I mainly develop <span className="focus">web applications</span>. My core skill is based on JavaScript and I love to do most of the things using JavaScript. My first preference has always been <span className="focus">designing UI</span> and <span className="focus">frontend devlopment</span>. I am currently in my 3rd year of undergraduate studies in Electronics & Communication Engineering.
             </p>
             <div className="about-action">
               <Button
