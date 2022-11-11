@@ -75,11 +75,11 @@ const Header = () => {
                 Projects
               </a>
             </li>
-            {/* <li>
+            <li>
               <a onClick={handleScroll} href="#experience">
                 Experiences
               </a>
-            </li> */}
+            </li>
             <li>
               <a onClick={handleScroll} href="#contact">
                 Contact

@@ -6,7 +6,6 @@ import { Container, Title } from "./common"
 import { projects } from "../data"
 
 import "./portfolio.css"
-// import PortfolioAction from "./PortfolioAction"
 
 const Portfolio = () => {
   return (
@@ -17,9 +16,9 @@ const Portfolio = () => {
           <div className="portfolio-items">
             {projects.map(({ name, image, description, demo, source, tools }) => (
               <div key={name} className="portfolio">
-                <div className="portfolio-img">
-                  {/* <img alt={name} src={image} /> */}
-                </div>
+                {/* <div className="portfolio-img">
+                  <img alt={name} src={image} /> 
+                </div> */}
                 <div className="details">
                   <h4>
                       {name}

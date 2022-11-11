@@ -114,6 +114,9 @@ header.compaq .container {
 
   .menubar.mobilenav-activate {
     display: initial;
+    margin: auto;
+    text-align: center;
+    width: 50%;
   }
 
   .menubar > * {

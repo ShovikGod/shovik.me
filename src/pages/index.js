@@ -2,7 +2,6 @@ import React from "react"
 
 import {
   Intro,
-  // LoveToDo,
   Portfolio,
   About,
   Skill,
@@ -17,7 +16,6 @@ const IndexPage = () => (
       <Intro />
       <About />
       <Skill />
-      {/* <LoveToDo /> */}
       <Portfolio />
       <Contact />
     </Layout>

@@ -133,6 +133,7 @@
 
 .portfolio-items .portfolio-tools {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 15px;
 }
 

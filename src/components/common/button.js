@@ -37,9 +37,11 @@ const Button = ({
       target={target}
       onClick={clickEvent && handleClick}
       onMouseOver={onMouseOver}
+      onFocus={onMouseOver}
       onMouseOut={onMouseOut}
+      onBlur={onMouseOut}
       rel={target ? "noopener noreferrer" : ""}
-      className= {`btn ${(type=="outlined") ? "btn-outlined" : ""}`}
+      className= {`btn ${(type==="outlined") ? "btn-outlined" : ""}`}
       href={link}
     >
       {title}
