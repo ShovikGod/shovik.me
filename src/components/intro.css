@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+.reveal-anim{
+  width: 100% !important;
+}
+
+.action{
+  display: flex;
+}
+
 .intro-area {
   font-family: 'Space Mono', monospace;
   background-image: url('../assets/image/intro-bg.png');
@@ -25,7 +33,7 @@
   color: #f27602;
 }
 
-.intro h1 {
+.intro .name {
   font-size: 78px;
   font-weight: 900;
   margin-bottom: 25px;
@@ -38,7 +46,6 @@
 
 .intro ul {
   display: flex;
-
   margin-bottom: 25px;
 }
 
@@ -84,7 +91,7 @@
     font-size: 21px;
   }
 
-  .intro h1 {
+  .intro .react-reveal h1 {
     font-size: 52px;
   }
 
@@ -99,6 +106,10 @@
   .intro ul li {
     font-size: 16px;
   }
+
+  .action{
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 481px) {
@@ -106,7 +117,7 @@
     font-size: 18px;
   }
 
-  .intro h1 {
+  .intro .react-reveal h1 {
     font-size: 36px;
   }
 

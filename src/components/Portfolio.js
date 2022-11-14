@@ -7,160 +7,79 @@ import { projects } from "../data"
 
 import "./portfolio.css"
 
+import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
+
 const Portfolio = () => {
   return (
     <div id="portfolio" className="portfolio-area">
       <Container>
-      <Title side="right" title="Projects" />
+        <Title side="right" title="Projects" />
+        
         <div className="portfolios">
-          <div className="portfolio-items">
-            {projects.map(({ name, image, description, demo, source, tools }) => (
-              <div key={name} className="portfolio">
-                {/* <div className="portfolio-img">
-                  <img alt={name} src={image} /> 
-                </div> */}
-                <div className="details">
-                  <h4>
-                      {name}
-                  </h4>
-                  <p>{description}</p>
-                  <div className="links">
-                    <ul>
-                      {source && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={source}
-                          >
-                            <FaGithub />
-                          </a>
-                        </li>
-                      )}
-                      {demo && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={demo}
-                          >
-                            <FaExternalLinkAlt />
-                          </a>
-                        </li>
-                      )}
-                    </ul>
+          <Zoom cascade right bottom duration={800}>
+            <div className="portfolio-items">
+              {projects.map(({ name, image, description, demo, source, tools }) => (
+                <div key={name} className="portfolio">
+                  {/* <div className="portfolio-img">
+                    <img alt={name} src={image} /> 
+                  </div> */}
+
+                  <div className="details">
+                    <Fade bottom cascade duration={400} delay={700}>
+                      <h4>
+                          {name}
+                      </h4>
+                    </Fade>
+                    
+                    <Fade cascade duration={1000} delay={900}>
+                      <p>
+                        {description}
+                      </p>
+                    </Fade>
+                    
+                    <div className="links">
+                      <Zoom cascade duration={500} delay={1000}>
+                        <ul>
+                          {source && (
+                            <li>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href={source}
+                              >
+                                <FaGithub />
+                              </a>
+                            </li>
+                          )}
+                          
+                          {demo && (
+                            <li>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href={demo}
+                              >
+                                <FaExternalLinkAlt />
+                              </a>
+                            </li>
+                          )}
+                        </ul>
+                      </Zoom>
+                    </div>
+                    
+                    <Zoom cascade top duration={500} delay={500}>
+                      <ul className="portfolio-tools">
+                        {tools.map(tool => (
+                          <li key={tool}>{tool}</li>
+                        ))}
+                      </ul>
+                    </Zoom>
                   </div>
-                  <ul className="portfolio-tools">
-                    {tools.map(tool => (
-                      <li key={tool}>{tool}</li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
-            ))}
-          </div>
-          {/* <div className="portfolio-items portfolios-featured">
-            {selectedFeaturedPortfolios.map((portfolio, index) => (
-              <div key={index} className="portfolio">
-                <div className="portfolio-img">
-                  <img alt={portfolio.name} src={portfolio.image} />
-                </div>
-                <div className="details">
-                  <h4>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={portfolio.demo}
-                    >
-                      {portfolio.name}
-                    </a>
-                  </h4>
-                  <p>{portfolio.description}</p>
-                  <div className="links">
-                    <ul>
-                      {portfolio.source && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={portfolio.source}
-                          >
-                            <FaGithub />
-                          </a>
-                        </li>
-                      )}
-                      {portfolio.demo && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={portfolio.demo}
-                          >
-                            <FaExternalLinkAlt />
-                          </a>
-                        </li>
-                      )}
-                    </ul>
-                  </div>
-                  <ul className="portfolio-tools">
-                    {portfolio.tools.map(tool => (
-                      <li key={tool}>{tool}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="portfolio-items portfolios-regular">
-            {selectedPortfolios.map((portfolio, index) => (
-              <div key={index} className="portfolio small">
-                <div className="details">
-                  <h4>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={portfolio.demo}
-                    >
-                      {portfolio.name}
-                    </a>
-                  </h4>
-                  <p>{portfolio.description}</p>
-                  <div className="links">
-                    <ul>
-                      {portfolio.source && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={portfolio.source}
-                          >
-                            <FaGithub />
-                          </a>
-                        </li>
-                      )}
-                      {portfolio.demo && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={portfolio.demo}
-                          >
-                            <FaExternalLinkAlt />
-                          </a>
-                        </li>
-                      )}
-                    </ul>
-                  </div>
-                  <ul className="portfolio-tools">
-                    {portfolio.tools.map(tool => (
-                      <li key={tool}>{tool}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div> */}
-          {/* <PortfolioAction /> */}
+              ))}
+            </div>
+          </Zoom>
         </div>
       </Container>
     </div>
