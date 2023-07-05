@@ -30,16 +30,15 @@ const Intro = () => {
             
             <Zoom cascade delay={500} duration={500}>
               <ul>
+                <li>Network Testing</li>
                 <li>Web Developer</li>
-                <li>Programmer</li>
-                {/* <li>Graphic Designer</li> */}
               </ul>
             </Zoom>
             
             <div className="action">
               <Bounce delay={500}>
                 <Button
-                  link="https://github.com/ShovikGod/shovik.me/raw/main/src/data/file/MyResume.pdf"
+                  link="https://github.com/ShovikGod/shovik.me/raw/main/src/data/file/Shovik__CV.pdf"
                   target="__blank"
                   title="Get Resume"
                 />                  

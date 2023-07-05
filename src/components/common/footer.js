@@ -26,30 +26,6 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="copyright">
-            {/* <ul className="github">
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/zonayedpca/zonayed.me"
-                >
-                  <p>
-                    <FaStar /> Star
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/zonayedpca/zonayed.me"
-                >
-                  <p>
-                    <FaCodeBranch /> Fork
-                  </p>
-                </a>
-              </li>
-            </ul> */}
             <p>
               <a
                 style={{ textDecoration:"none", color: "#f27602" }}
