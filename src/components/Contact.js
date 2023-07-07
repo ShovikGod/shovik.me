@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-area">
       <Container>
-        <Title side="left" title="Contact" />
+        <Title side="right" title="Contact" />
         <div className="contact">
           <div className="contact-status">
             <Fade duration={2000}>

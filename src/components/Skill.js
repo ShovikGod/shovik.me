@@ -16,7 +16,7 @@ const Skill = () => {
   return (
     <div id="skill" className="skill-area">
       <Container>
-        <Title title="My Skills" />
+        <Title title="Skills" />
         <div className="skills">
           <Zoom cascade left bottom duration={500}>
             <ul className="skill-nav">

@@ -2,10 +2,11 @@ import React from "react"
 
 import {
   Intro,
-  Portfolio,
   About,
   Skill,
   Contact,
+  Projects,
+  Experience,
 } from "../components"
 import { Layout, SEO } from "../components/common"
 
@@ -16,7 +17,8 @@ const IndexPage = () => (
       <Intro />
       <About />
       <Skill />
-      <Portfolio />
+      <Experience />
+      <Projects />
       <Contact />
     </Layout>
   </>

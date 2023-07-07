@@ -19,7 +19,7 @@ const About = () => {
           <div className="about-details">
             <Fade duration={3000}>
               <p>
-                Hello! I'm Shovik Poddar, a passionate <span className="focus">software developer</span>. I mainly develop <span className="focus">web applications</span>. My core skill is based on JavaScript and I love to do most of the things using JavaScript. My first preference has always been <span className="focus">designing UI</span> and <span className="focus">frontend devlopment</span>. I am currently in my 3rd year of undergraduate studies in Electronics & Communication Engineering.
+                Hello! 👋 I am a passionate  <span className="focus">Software Developer</span> having keen interest in  <span className="focus">Computer Networking</span> and <span className="focus">VLSI</span>. I previously started my career as a Graphic Designer, moving on to Web Development using MERN stack. I specialize in <span className="focus">Network Test Automation</span> and have worked on <span className="focus">TSN</span> protocols (specially the PTP and gPTP stack over ethernet).
               </p>
             </Fade>
             

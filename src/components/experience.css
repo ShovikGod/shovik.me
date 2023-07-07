@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.experience-area {
+  font-family: 'Space Mono', monospace;
+  position: relative;
+}
+
+.horizontal-rule{
+  height: 0.5px;
+  background-color: #283c58;
+  margin-bottom: 0;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.bottom{
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.header, 
+.footer{
+  display: flex;
+  align-items: end;
+}
+
+.header p,
+.footer p{
+  text-align: right;
+  margin-right: 1em;
+}
+
+.footer{
+  margin-bottom: 0.5em;   
+}
+
+.footer .skills{
+  font-size: 0.8em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.experience-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience-items > * {
+  margin: 15px;
+  flex: 1 1 calc(100% - 30px);
+  background-color: #1d293a;
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+}
+
+.experience-items h4 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.experience{
+  border: 2px solid #1d293a;
+  transition: border 0.2s ease-in-out;
+}
+
+.experience:hover{
+  border: 2px solid #f27602;
+}
+
+.experience:hover h4{
+  color: #f27602;
+}
+
+.experience-items h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.experience-items .role{
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding-left: 1em;
+}
+
+.experience-items .experience-img {
+  position: relative;
+  display: contents;
+}
+
+.experience-items .experience-img:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: #1d293a;
+  mix-blend-mode: color;
+  transition: 0.5s all;
+}
+
+.experience-items .experience:hover .experience-img:after {
+  opacity: 0;
+}
+
+.experience-items .experience-img img {
+  border-radius: 4px;
+  width: 2em;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.experience-items .details {
+  padding: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .experience-items > * {
+    flex: 1 1 calc(100% - 30px);
+  }
+
+  .experiences {
+    padding-left: 0;
+  }
+
+  .experience-nav {
+    justify-content: center;
+  }
+
+  .experience-items > * {
+    flex-basis: 100%;
+  }
+
+  .experience-items > * {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .experience-items > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .experience-nav {
+    margin-bottom: 0;
+  }
+
+  .experience-nav li {
+    margin: 0 5px;
+    margin-bottom: 15px;
+  }
+
+  .experience-items > * {
+    margin-bottom: 15px;
+  }
+}

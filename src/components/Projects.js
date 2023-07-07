@@ -5,16 +5,16 @@ import { Container, Title } from "./common"
 
 import { projects } from "../data"
 
-import "./portfolio.css"
+import "./projects.css"
 
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 
-const Portfolio = () => {
+const Projects = () => {
   return (
     <div id="portfolio" className="portfolio-area">
       <Container>
-        <Title side="right" title="Projects" />
+        <Title side="left" title="Projects" />
         
         <div className="portfolios">
           <Zoom cascade right bottom duration={800}>
@@ -86,4 +86,4 @@ const Portfolio = () => {
   )
 }
 
-export { Portfolio }
+export { Projects }
