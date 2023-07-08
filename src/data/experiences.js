@@ -46,7 +46,7 @@ export const experiences = [
     role: "Full Stack Development Intern",
     sDate: "Feb 2021",
     eDate: "Jun 2021",
-    desc: "• Created the main company website along with the team.\n• Created responsive designs for the website and an exam portal.\n• Used React.js to deliver high-quality designs.• Created Restful APIs using Node.js and Express.js.• Worked with MongoDB as backend",
+    desc: "• Created the main company website along with the team.\n• Created responsive designs for the website and an exam portal.\n• Used React.js to deliver high-quality designs.\n• Created Restful APIs using Node.js and Express.js.• Worked with MongoDB as backend",
     skills: "MERN, WebSocket, Figma"
   },
 ]

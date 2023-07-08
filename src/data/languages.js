@@ -2,7 +2,7 @@ export const languages = [
   {
     id: "English",
     text: "Thanks",
-    progress: 80,
+    progress: 90,
   },
   {
     id: "Bengali",

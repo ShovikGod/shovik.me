@@ -18,7 +18,7 @@ export const Footer = () => {
           <div className="language">
             <ul>
               {languages.map(({ id, text, progress }) => (
-                <li key={id} style={{textAlign: "center", width: "100px"}} >
+                <li key={id} style={{textAlign: "center"}} >
                   <p>{text}</p>
                   <div style={{ width: progress + "%" }} className="progress" />
                 </li>

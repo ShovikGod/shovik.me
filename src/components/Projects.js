@@ -19,27 +19,19 @@ const Projects = () => {
         <div className="portfolios">
           <Zoom cascade right bottom duration={800}>
             <div className="portfolio-items">
-              {projects.map(({ name, image, description, demo, source, tools }) => (
+              {projects.map(({ name, description, demo, source, tools }) => (
                 <div key={name} className="portfolio">
-                  {/* <div className="portfolio-img">
-                    <img alt={name} src={image} /> 
-                  </div> */}
-
                   <div className="details">
-                    <Fade bottom cascade duration={400} delay={700}>
-                      <h4>
-                          {name}
-                      </h4>
-                    </Fade>
-                    
-                    <Fade cascade duration={1000} delay={900}>
-                      <p>
-                        {description}
-                      </p>
-                    </Fade>
-                    
+                    <h4>
+                        {name}
+                    </h4>
+
+                    <p>
+                      {description}
+                    </p>
+              
                     <div className="links">
-                      <Zoom cascade duration={500} delay={1000}>
+                      <Zoom cascade duration={1000}>
                         <ul>
                           {source && (
                             <li>
@@ -68,7 +60,7 @@ const Projects = () => {
                       </Zoom>
                     </div>
                     
-                    <Zoom cascade top duration={500} delay={500}>
+                    <Zoom cascade top duration={1000}>
                       <ul className="portfolio-tools">
                         {tools.map(tool => (
                           <li key={tool}>{tool}</li>
