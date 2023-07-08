@@ -19,7 +19,6 @@
 }
 
 .about-details p .focus{
-  cursor: pointer;
   font-weight: 700;
   color: #fff;
   transition: color 0.5s ease;
@@ -65,5 +64,9 @@
 
   .about-action{
     justify-content: center;
+  }
+
+  .about-details p {
+    margin: auto 1.5em;
   }
 }

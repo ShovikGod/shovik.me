@@ -110,11 +110,11 @@ header.compaq .container {
     padding: 25px;
     border-radius: 4px;
     display: none;
+    margin-right: 0;
   }
 
   .menubar.mobilenav-activate {
     display: initial;
-    margin: auto;
     text-align: center;
     width: 50%;
   }

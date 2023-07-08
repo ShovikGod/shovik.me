@@ -46,7 +46,7 @@
 .skill .card {
   position: relative;
   background-color: #1d293a;
-  padding: 25px;
+  padding: 30px;
   padding-bottom: 35px;
   margin: 15px;
   border-radius: 4px;
@@ -117,13 +117,12 @@
   }
 
   .skill .card {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 1.5em;
+    margin-top: 0;
   }
 
   .skill > *:last-child {
-    flex-basis: 100%;
-    margin-bottom: 0;
+    flex-basis: 92.5%;
   }
 }
 

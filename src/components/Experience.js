@@ -19,7 +19,7 @@ const Experience = () => {
             <div className="experience-items">
               {experiences.map(({ company, link, image, role, sDate, eDate, desc, skills }) => (
                 <div key={company} className="experience">
-                  <div className="header">
+                  <div className="exp-header">
                       <div className="experience-img">
                         <img alt={company} src={image} /> 
                       </div>
@@ -45,7 +45,7 @@ const Experience = () => {
                   
                   <hr className="horizontal-rule bottom"></hr>
 
-                  <div className="footer">                        
+                  <div className="exp-footer">                        
                       <p className="skills">
                         {skills}  
                       </p>

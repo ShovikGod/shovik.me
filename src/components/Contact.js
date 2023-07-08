@@ -32,8 +32,8 @@ const Contact = () => {
                 />
               </Bounce>
             </div>
-            
           </div>
+          
           <div className="contact-details">
             <ul>
               <li>
