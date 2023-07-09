@@ -106,11 +106,11 @@ header.compaq .container {
     background-color: #1d293a;
     align-items: flex-start;
     margin-left: auto;
+    margin-right: auto;
     width: 40%;
     padding: 25px;
     border-radius: 4px;
     display: none;
-    margin-right: 0;
   }
 
   .menubar.mobilenav-activate {

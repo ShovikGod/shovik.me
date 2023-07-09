@@ -95,3 +95,10 @@
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 481px) {
+  .footer .language ul li p {
+    font-size: 0.7em;
+  }
+
+}

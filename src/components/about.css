@@ -65,8 +65,12 @@
   .about-action{
     justify-content: center;
   }
+  .about-image img{
+    width: 260px;
+  } 
 
   .about-details p {
-    margin: auto 1.5em;
+    margin: auto 1.8em;
+    font-size: 0.9em;
   }
 }
